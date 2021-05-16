@@ -1,0 +1,4 @@
+app to application
+in requirements.txt removed pkg-resources==0.0.0
+removed redis call in config.py
+

@@ -4,4 +4,7 @@ from app_modules import create_app
 application = create_app()
 
 if __name__ == "__main__":
-    application.run(host='0.0.0.0', port=7000)
+    #application.run(port=8000, debug=True)
+    #application.run(port=8000, debug=True)
+    application.debug=True
+    application.run()

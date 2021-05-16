@@ -18,9 +18,9 @@ class BaseConfig:
     ASSETS_AUTO_BUILD = True
 
     #Flask-Session
-    SESSION_TYPE = environ.get('SESSION_TYPE')
-    SESSION_REDIS = redis.from_url(environ.get('SESSION_REDIS'))
-    SESSION_COOKIE_NAME = environ.get('SESSION_COOKIE_NAME')
+    #SESSION_TYPE = environ.get('SESSION_TYPE')
+    #SESSION_REDIS = redis.from_url(environ.get('SESSION_REDIS'))
+    #SESSION_COOKIE_NAME = environ.get('SESSION_COOKIE_NAME')
 
     # Database
     #SQLALCHEMY_DATABASE_URI = environ.get("SQLALCHEMY_DATABASE_URI")
@@ -56,7 +56,7 @@ class DevConfig(BaseConfig):
     LESS_RUN_IN_DEBUG = True
     COMPRESSOR_DEBUG = True
     #SQLALCHEMY_DATABASE_URI = "postgres+psycopg2://postgres:postgres@192.168.248.130:5432/ramki_pirple"
-    SQLALCHEMY_DATABASE_URI = "postgres+psycopg2://postgres:postgres@ramki-aws-two.czqwnkydzl3z.us-east-1.rds.amazonaws.com:5432/ramki_pirple"
+    SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://postgres:postgres@ramki-aws-two.czqwnkydzl3z.us-east-1.rds.amazonaws.com:5432/ramki_pirple"
     #SQLALCHEMY_DATABASE_URI = "postgres+psycopg2://postgres:postgres@192.168.0.109:5432/ramki_pirple"
     SQLALCHEMY_ECHO = True
     SQLALCHEMY_TRACK_MODIFICATIONS = False
