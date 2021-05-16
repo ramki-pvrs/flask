@@ -1,0 +1,14 @@
+sudo su 
+docker start ramki_postgres
+
+new terminal
+cd /home/devops1/flask_projects/flask/flask-webapp
+source venv/bin/activate
+python wsgi.py for loading in local 
+
+
+AWS
+wsgi.py copied to application.py
+ - app is changed to application inside application.py
+
+

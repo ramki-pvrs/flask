@@ -40,6 +40,7 @@ class ProdConfig(BaseConfig):
     LESS_RUN_IN_DEBUG = False
     COMPRESSOR_DEBUG = False
     SQLALCHEMY_DATABASE_URI="postgres+psycopg2://postgres:postgres@192.168.248.130:5432/ramki_pirple"
+    #SQLALCHEMY_DATABASE_URI="postgres+psycopg2://postgres:postgres@192.168.0.109:5432/ramki_pirple"
     SQLALCHEMY_ECHO = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     #SQLALCHEMY_ENGINE_OPTIONS = {case_sensitive=True,echo=False}
@@ -54,7 +55,9 @@ class DevConfig(BaseConfig):
     ASSETS_DEBUG = True
     LESS_RUN_IN_DEBUG = True
     COMPRESSOR_DEBUG = True
-    SQLALCHEMY_DATABASE_URI = "postgres+psycopg2://postgres:postgres@192.168.248.130:5432/ramki_pirple"
+    #SQLALCHEMY_DATABASE_URI = "postgres+psycopg2://postgres:postgres@192.168.248.130:5432/ramki_pirple"
+    SQLALCHEMY_DATABASE_URI = "postgres+psycopg2://postgres:postgres@ramki-aws-two.czqwnkydzl3z.us-east-1.rds.amazonaws.com:5432/ramki_pirple"
+    #SQLALCHEMY_DATABASE_URI = "postgres+psycopg2://postgres:postgres@192.168.0.109:5432/ramki_pirple"
     SQLALCHEMY_ECHO = True
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     #SQLALCHEMY_ENGINE_OPTIONS = {case_sensitive=True,echo=False}
